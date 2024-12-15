@@ -35,7 +35,7 @@ The Python notebook documents the work:
 
 1. **Data Preprocessing**: Steps for preparing video frames or GIFs for model input.
 2. **Model Design (architecture)**: Detailed implementation of encoder-decoder architecture and optimization techniques.
-<img src="screenshots/attention_research_1.webp" alt="Transformer Architecture" width="400">
+<img src="screenshots/attention_research_1.webp" alt="Transformer Architecture" width="300">
 
 4. **Experiments**: Logs of results  and model configurations.
 5. **Evaluation**: Analysis of generated captions and qualitative testing outcomes.
@@ -80,12 +80,13 @@ The Python notebook documents the work:
 2. **Data Augmentation**: Avoided due to computational constraints. Used early stopping to manage overfitting.
 ## Results
 ### Some Good Examples
-<img src="screenshots/dancing.png" alt="Example 1" width="400">
-<img src="screenshots/soccer playing.png" alt="Example 2" width="400">
-<img src="screenshots/cat.png" alt="Example 3" width="400">
+
+<img src="screenshots/soccer playing.png" alt="Example 2" width="600">
+<img src="screenshots/cat.png" alt="Example 3" width="600">
 
 ### A really bad inference example
-<img src="screenshots/bad example.png" alt="Bad Example" width="400">
+
+<img src="screenshots/bad example.png" alt="Bad Example" width="600">
 
 ## Future Improvements
 
