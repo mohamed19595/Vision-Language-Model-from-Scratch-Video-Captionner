@@ -2,7 +2,11 @@
 # Project Overview
 
 This project focuses on developing a video captioning system—a task aimed at generating meaningful natural language descriptions for video content. The objective was to bridge computer vision and natural language processing, but the experiment faced challenges, resulting in captions that were inconsistent and inaccurate. Despite this, the journey provided valuable insights and potential paths forward.
-
+This Work Was Inspired by:
+**VideoCoCa: Video-Text Modeling with Zero-Shot Transfer from Contrastive Captioners**
+https://arxiv.org/pdf/2212.04979
+**Andrej karpathy Video** 
+https://www.youtube.com/watch?v=l8pRSuU81PU&t=10126s&ab_channel=AndrejKarpathy
 ## Motivation and Importance
 
 Video captioning has diverse applications, including:
@@ -21,21 +25,18 @@ The task is challenging due to the need to extract meaningful information from f
 
 The system is built around an encoder-decoder transformer architecture. Key components include:
 
-- **Encoder**: Extracts visual features using CNN-based backbones (e.g., ResNet16, ResNet18) or potentially Vision Transformers.
-- **Decoder**: Generates captions, leveraging trainable embedding tables and a transformer-based structure for natural language generation.
+- **Encoder**: Extracted visual features using CNN-based backbones (e.g., ResNet16, ResNet18) are fed to MultiHead attention Layers.
+- **Decoder**: Auto-regressively Generates captions, leveraging trainable embedding tables and MultiHead decoders for natural language generation.
 - **Alignment Mechanisms**: Incorporates contrastive loss for aligning frame and text embeddings.
-- **Regularization**: Employs techniques like weight decay, dropout, and simplified architectures to combat overfitting.
 
 ### Notebook Contents
 
-The Python notebook documents the experimental process:
+The Python notebook documents the work:
 
 1. **Data Preprocessing**: Steps for preparing video frames or GIFs for model input.
-2. **Model Design**: Detailed implementation of encoder-decoder architecture and optimization techniques.
-3. **Experiments**: Logs of results for various datasets (MSR-VTT, T-GIF) and model configurations.
+2. **Model Design (architecture)**: Detailed implementation of encoder-decoder architecture and optimization techniques.
+3. **Experiments**: Logs of results  and model configurations.
 4. **Evaluation**: Analysis of generated captions and qualitative testing outcomes.
-5. **Challenges and Observations**: Notes on bottlenecks, overfitting issues, and potential improvements.
-6. **Future Directions**: Suggestions for enhancements based on experiment outcomes.
 
 ## Phases and Challenges
 
