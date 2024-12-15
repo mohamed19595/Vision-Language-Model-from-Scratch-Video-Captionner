@@ -35,7 +35,7 @@ The Python notebook documents the work:
 
 1. **Data Preprocessing**: Steps for preparing video frames or GIFs for model input.
 2. **Model Design (architecture)**: Detailed implementation of encoder-decoder architecture and optimization techniques.
- ![Transformer Architecture](screenshots/attention_research_1.webp)
+<img src="screenshots/attention_research_1.webp" alt="Transformer Architecture" width="400">
 4. **Experiments**: Logs of results  and model configurations.
 5. **Evaluation**: Analysis of generated captions and qualitative testing outcomes.
 
@@ -64,8 +64,8 @@ The Python notebook documents the work:
 1. **Enhancements**:
    - Added contrastive loss inspired by Video-CoCa to align text and frame embeddings.
    - Replaced Bert embeddings with a learnable embedding table, improving sentence structure learning.
-![Contrastive Learning](screenshots/contrastive Learning.png)
-![Contrastive Captionning](screenshots/contrastive captionning.png)
+<img src="screenshots/contrastive Learning.png" alt="Contrastive Learning" width="400">
+<img src="screenshots/contrastive captionning.png" alt="Contrastive Captionning" width="400">
 2. **Outcomes**:
    - Occasionally captured main actions but lacked consistency.
    - Tested across multiple GIFs with varying results.
@@ -78,11 +78,11 @@ The Python notebook documents the work:
 2. **Data Augmentation**: Avoided due to computational constraints. Used early stopping to manage overfitting.
 ## Results
 ### Some Good Examples
-![Example 1](screenshots/dancing.png)
-![Example 2](screenshots/soccer playing.png)
-![Example 3](screenshots/cat.png)
+<img src="screenshots/dancing.png" alt="Example 1" width="400">
+<img src="screenshots/soccer playing.png" alt="Example 2" width="400">
+<img src="screenshots/cat.png" alt="Example 3" width="400">
 ### A really bad inference example
-![Bad Example](screenshots/bad example.png)
+<img src="screenshots/bad example.png" alt="Bad Example" width="400">
 ## Future Improvements
 
 1. **Better Backbones**:
