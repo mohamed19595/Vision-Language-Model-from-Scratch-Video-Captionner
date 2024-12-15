@@ -35,8 +35,9 @@ The Python notebook documents the work:
 
 1. **Data Preprocessing**: Steps for preparing video frames or GIFs for model input.
 2. **Model Design (architecture)**: Detailed implementation of encoder-decoder architecture and optimization techniques.
-3. **Experiments**: Logs of results  and model configurations.
-4. **Evaluation**: Analysis of generated captions and qualitative testing outcomes.
+ ![Transformer Architecture](screenshots/attention_research_1.webp)
+4. **Experiments**: Logs of results  and model configurations.
+5. **Evaluation**: Analysis of generated captions and qualitative testing outcomes.
 
 ## Phases and Challenges
 
@@ -51,7 +52,7 @@ The Python notebook documents the work:
 
 ### Transition to GIFs and ResNet18
 
-1. **Dataset**: Switched to T-GIF dataset to reduce computational load.
+1. **Dataset**: Switched to T-GIF dataset to reduce computational load GIFs are lighter than videos and can lead to the same task (Video Captionning).
 2. **Improvements**:
    - Stored image embeddings in tensors.
    - Used uniform frame sampling (16 frames per GIF).
@@ -63,6 +64,8 @@ The Python notebook documents the work:
 1. **Enhancements**:
    - Added contrastive loss inspired by Video-CoCa to align text and frame embeddings.
    - Replaced Bert embeddings with a learnable embedding table, improving sentence structure learning.
+![Contrastive Learning](screenshots/contrastive Learning.png)
+![Contrastive Captionning](screenshots/contrastive captionning.png)
 2. **Outcomes**:
    - Occasionally captured main actions but lacked consistency.
    - Tested across multiple GIFs with varying results.
@@ -73,7 +76,13 @@ The Python notebook documents the work:
    - Applied weight decay, dropout layers, and LayerNorm adjustments.
    - Reduced parameters to 71M, slightly improving performance.
 2. **Data Augmentation**: Avoided due to computational constraints. Used early stopping to manage overfitting.
-
+## Results
+### Some Good Examples
+![Example 1](screenshots/dancing.png)
+![Example 2](screenshots/soccer playing.png)
+![Example 3](screenshots/cat.png)
+### A really bad inference example
+![Bad Example](screenshots/bad example.png)
 ## Future Improvements
 
 1. **Better Backbones**:
