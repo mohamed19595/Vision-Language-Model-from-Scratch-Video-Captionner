@@ -1,4 +1,4 @@
-# Vision-Language-Model-from-Scratch-Video-Captionner
+# Vision-Language-Model-from-Scratch : Video-Captionner
 # Project Overview
 
 This project focuses on developing a video captioning system—a task aimed at generating meaningful natural language descriptions for video content. The objective was to bridge computer vision and natural language processing, but the experiment faced challenges, resulting in captions that were inconsistent and inaccurate. Despite this, the journey provided valuable insights and potential paths forward.
